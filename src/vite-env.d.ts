@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_STAR_WAR_API: string;
+  readonly VITE_RICK_MORTY_API: string;
 }
 
 interface ImportMeta {

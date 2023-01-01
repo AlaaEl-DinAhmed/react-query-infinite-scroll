@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { InfinitePeople } from "./Components/InfinitePeople";
 
 const queryClient = new QueryClient();
 
@@ -8,6 +9,8 @@ export function App() {
     <QueryClientProvider client={queryClient}>
       <h1 className="text-3xl text-center pt-5">Infinite Scroll</h1>
       <ReactQueryDevtools initialIsOpen={false} />
+
+      <InfinitePeople />
     </QueryClientProvider>
   );
 }
